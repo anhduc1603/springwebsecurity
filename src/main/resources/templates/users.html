@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th ="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALL USERS-AnhDuc</title>
+        <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+</head>
+<body>
+     <div class="container text-center">
+         <h1>Danh Sach Cac Users</h1>
+     </div>
+     <div>
+         <table class="table table-striped table-bordered">
+              <thead class="thead-dark">
+                   <tr>
+                       <th>User ID</th>
+                       <th>Email</th>
+                       <th>Full Name</th>
+                   </tr>
+              </thead>
+               <tbody th:each="user:${listUsers}">
+                   <!--/*@thymesVar id="id" type=""*/-->
+                   <td th:text="${user.id}">User ID</td>
+                   <td th:text="${user.email}"> Email</td>
+                   <td th:text="${user.fullName}"> Full Name</td>
+              </tbody>
+         </table>
+     </div>
+
+</body>
+</html>

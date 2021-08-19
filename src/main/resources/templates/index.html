@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th ="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home-AnhDuc</title>
+        <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+</head>
+<body>
+     <div class="container text-center">
+         <h1>TRANG CHU</h1>
+     </div>
+     <div class="container text-center">
+         <h3><a th:href="@{/control}">List All Users</a></h3>
+         <h3><a th:href="@{/register}">Register</a></h3>
+         <h3><a th:href="@{/login}">Login</a></h3>
+
+     </div>
+</body>
+</html>
